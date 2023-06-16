@@ -4,12 +4,12 @@
 
 <head>
 	<meta charset="utf-8">
-
-	<title>Sprint Challenge - Home</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<meta name="viewport" content=""width=device-with, initial-scale="1.0">
+	<title>Sprint Challenge - Home</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -17,15 +17,21 @@
 		<!-- header -->
 		<header>
 			<div>
-				<h1>BLOOMTECH BAR AND GRILL</h1>
+				<h1>
+					<a href="index.html">BLOOMTECH BAR AND GRILL</a>
+				</h1>
 				<!-- nav -->
 				<nav>
-				<a class="link" href="/menu.html">Menu</a>
-				<a class="link" href="reservations">Reservations</a>
-				<a class="link" href="specialoffers">Special Offers</a>
-				<a class="link" href="contact">Contact</a>	
+					<div>
+						<a class="link" href="/menu.html">Menu</a>
+						<a class="link" href="reservations.html">Reservations</a>
+						<a class="link" href="specialoffers.html">Special Offers</a>
+						<a class="link" href="contact.html">Contact</a>	
+						<i class="fa-brands fa-facebook"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-instagram"></i>
+					</div>
 				</nav>
-				
 			</div>
 		</header>
 
@@ -33,24 +39,25 @@
 		<section class="gallery">
 			<div>
 				<h2>OUR FOOD</h2>
+				<div class="galley-style-images">
+					<img src="img/food-avocadotoast.jpg" alt="toast with avocado and eggs">
 
-				<img src="img/food-avocadotoast.jpg" alt="toast with avocado and eggs">
-
-				<img src="img/food-burger.jpg" alt="person holding drink, burger, and dish of food">
+					<img src="img/food-burger.jpg" alt="person holding drink, burger, and dish of food">
 				
-				<img src="img/food-poutine.jpg" alt="pan of poutine">
+					<img src="img/food-poutine.jpg" alt="pan of poutine">
 		
-				<img src="img/food-ribs.jpg" alt="plate of ribs">	
+					<img src="img/food-ribs.jpg" alt="plate of ribs">	
 
-				<img src="img/food-sandwich.jpg" alt="sandwich on red checkered deli paper">
+					<img src="img/food-sandwich.jpg" alt="sandwich on red checkered deli paper">
 
-				<img src="img/food-sausage.jpg" alt="sausage in bug with onions">
+					<img src="img/food-sausage.jpg" alt="sausage in bug with onions">
 
-				<img src="img/food-steak.jpg" alt="steak in sause with broccoli">
+					<img src="img/food-steak.jpg" alt="steak in sause with broccoli">
 
-				<img src="img/food-tacos.jpg" alt="tray with three tacos">
+					<img src="img/food-tacos.jpg" alt="tray with three tacos">
 
-				<img src="img/food-wings.jpg" alt="drink next to plate with wings, sauce, and cucumbers">
+					<img src="img/food-wings.jpg" alt="drink next to plate with wings, sauce, and cucumbers">
+				</div>
 			</div>
 		</section>
 
@@ -130,14 +137,16 @@
 		<!-- footer -->
 		<footer>
 			<!-- email signup -->
-			<h2>Join our mailing list!</h2>
-			<h3>Sign Up</h3>
+			<label for="email">Join our mailing list!</label>
+			<input type="text" id="email" placeholder="Email Address">
+			<button>Sign Up</button>
+			
 			<!-- nav -->
 			<nav>
 			<a class="link" href="/menu.html">Menu</a>
-			<a class="link" href="reservations">Reservations</a>
-			<a class="link" href="specialoffers">Special Offers</a>
-			<a class="link" href="contact">Contact</a>
+			<a class="link" href="reservations" target="blank">Reservations</a>
+			<a class="link" href="specialoffers" target="blank">Special Offers</a>
+			<a class="link" href="contact" target="blank">Contact</a>
 			</nav>
 			<!-- copyright -->
 			<div class="copyright">
@@ -145,6 +154,7 @@
             </div>
 		</footer>
 	</div>
+	<script src="index.js"></script>
 </body>
 
 </html>
